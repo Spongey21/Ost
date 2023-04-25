@@ -33,7 +33,6 @@ for (let i = 0; i < 2; i++) {
     PARAGRAPH.textContent = 'Bears. Beets. Battlestar Galactica.'
 
     ARTICLE.append(IMG, H1, PARAGRAPH)
-    console.log(ARTICLE);
     arr.push(ARTICLE)
 }
 
