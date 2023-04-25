@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="#content" class="sr-only">Spring til indholdet</a>
+    <header class="siteHeader">
+        <a href="./" class="siteHeader_brand">Brians Ostebiks</a>
+        <button class="burgerMenuButton">
+            <i data-feather="menu"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+        <nav class="primaryNavigation" aria-hidden="true">
+            <form action="./submit.html">
+                <div class="primaryNavigation__search">
+                    <input type="search" class="primaryNavigation__search--background" name="searchBar"
+                        placeholder="Søg efter ost her..">
+                    <i data-feather="search"></i>
+                </div>
+            </form>
+            <menu class="primaryNavigation_menu">
+                <li class="primaryNavigation_menuItem"><a href="#" class="primaryNavigation_link">Link 1</a></li>
+                <li class="primaryNavigation_menuItem"><a href="#" class="primaryNavigation_link">Link 2</a></li>
+                <li class="primaryNavigation_menuItem"><a href="#" class="primaryNavigation_link">Link 3</a></li>
+            </menu>
+        </nav>
+    </header>
+    <main id="content">
+        <section class="highlights">
+            <!-- <article class="highlights_article">
+                <img class="highlights_image" src="https://placebear.com/640/360" alt="bear">
+                <h1 class="highlights_heading">FACT: Bears eat beets.</h1>
+                <p class="highlights_text">
+                    Bears. Beets. Battlestar Galactica.
+                </p>
+            </article>
+            <article class="highlights_article">
+                <img class="highlights_image" src="https://placebear.com/640/360" alt="bear">
+                <h1 class="highlights_heading">FACT: Bears eat beets.</h1>
+                <p class="highlights_text">
+                    Bears. Beets. Battlestar Galactica.
+                </p>
+            </article>
+            <article class="highlights_article">
+                <img class="highlights_image" src="https://placebear.com/640/360" alt="bear">
+                <h1 class="highlights_heading">FACT: Bears eat beets.</h1>
+                <p class="highlights_text">
+                    Bears. Beets. Battlestar Galactica.
+                </p>
+            </article> -->
+        </section>
+    </main>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="./scripts/burgermenu.js"></script>
+    <script src="./scripts/slider.js"></script>
+    <script>
+        feather.replace();
+
+        SLIDER.REQUEST()
+    </script>
+</body>
+
+</html>

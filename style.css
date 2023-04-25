@@ -1,0 +1,24 @@
+@import url(./css/base.css);
+@import url(./css/header.css);
+@import url(./css/primaryNavigation.css);
+@import url(./css/burgerMenu.css);
+@import url(css/highlights.css);
+:root{
+    --clr-primary: #f0f07f;
+    --clr-secondary: #885e0f;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* for screenreader users */
+.sr-only{
+    position: fixed;
+    visibility: hidden;
+    display: block;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}

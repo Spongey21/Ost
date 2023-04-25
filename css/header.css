@@ -1,0 +1,10 @@
+.siteHeader{
+    display: flex;
+    justify-content: space-between;
+
+    background-color: var(--clr-primary);
+    height: 3em;
+
+    padding: 1em 0.5em .5em;
+}
+
