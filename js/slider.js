@@ -1,4 +1,4 @@
-const dot = (function () {
+const SLIDER = (function () {
     var index = 0;
 
     function changeElement(element_container, newElement) {
