@@ -7,14 +7,6 @@ const POINTER = document.querySelector('.pointer');
 
 const arr = []
 
-{/* <article class="highlights_article">
-    <img class="highlights_image" src="https://placebear.com/640/360" alt="bear">
-    <h1 class="highlights_heading">FACT: Bears eat beets.</h1>
-    <p class="highlights_text">
-        Bears. Beets. Battlestar Galactica.
-    </p>
-</article> */}
-
 for (let i = 0; i < 4; i++) {
     let ARTICLE = document.createElement('article')
     ARTICLE.classList.add('highlights_article')
