@@ -13,18 +13,8 @@ for (let i = 0; i < 4; i++) {
 
     let IMG = document.createElement('img')
     IMG.classList.add('highlights_image')
-    IMG.src = 'https://placebear.com/640/360'
+    IMG.src = `https://placebear.com/640/36${i}`
     IMG.alt = 'bear'
-
-    if (i == 0) {
-        IMG.src = 'https://placebear.com/640/360'
-    } else if (i == 1) {
-        IMG.src = 'https://placebear.com/640/361'
-    } else if (i == 2) {
-        IMG.src = 'https://placebear.com/640/362'
-    } else {
-        IMG.src = 'https://placebear.com/640/363'
-    }
 
     let H1 = document.createElement('h1')
     H1.classList.add('highlights_heading')

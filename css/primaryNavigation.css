@@ -1,4 +1,6 @@
 .primaryNavigation{
+    z-index: 9999;;
+
     position: fixed;
     top: 3em;
     right: 0;
