@@ -1,8 +1,10 @@
-@import url(./css/base.css);
-@import url(./css/header.css);
-@import url(./css/primaryNavigation.css);
-@import url(./css/burgerMenu.css);
-@import url(css/highlights.css);
+@import url('/css/base.css');
+@import url('/css/header.css');
+@import url('/css/primaryNavigation.css');
+@import url('/css/burgerMenu.css');
+@import url('css/highlights.css');
+@import url('/css/slider.css');
+
 :root{
     --clr-primary: #f0f07f;
     --clr-secondary: #885e0f;
