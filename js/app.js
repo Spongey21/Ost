@@ -28,7 +28,7 @@ for (let i = 0; i < 4; i++) {
     arr.push(ARTICLE)
 }
 
-SLIDER.REQUEST(ELEMENT, POINTER, arr)
+SLIDER.INIT(ELEMENT, POINTER, arr)
 
 SLIDER.BTN_FORWARD(FORWARD, ELEMENT, POINTER, arr);
 

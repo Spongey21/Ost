@@ -6,8 +6,7 @@ const SLIDER = (function () {
         element_container.append(newElement);
     }
 
-    // Gets external element_arr and radio button creation
-    function REQUEST(element_container, container, element_arr) {
+    function INIT(element_container, container, element_arr) {
         for (let i = 0; i < element_arr.length; i++) {
 
             const RADIO = document.createElement('input')
@@ -59,6 +58,22 @@ const SLIDER = (function () {
         })
     }
 
+    // executes at animation start
+    function animationStart(element_container, btn_forward, btn_Back) {
+        element_container.addEventListener('animationstart', function() {
+            btn_forward.disable = true;
+            btn_Back.disable = true;
+        })
+    }
+
+    // executes at animation end
+    function animationEnd(element_container, btn_forward, btn_Back) {
+        element_container.addEventListener('animationend', function(anim) {
+            btn_forward.disable = false;
+            btn_Back.disable = false;
+        })
+    }
+
     // Press key for slider movement
     function keyPress(forward, back) {
         document.addEventListener('keyup', function (event) {
@@ -71,7 +86,7 @@ const SLIDER = (function () {
     }
 
     return {
-        REQUEST,
+        INIT,
         BTN_FORWARD,
         BTN_BACK,
         keyPress
