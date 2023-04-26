@@ -1,7 +1,7 @@
 {
     "name": "Oste-app",
     "description": "Application",
-    "start_url": "/",
+    "start_url": "./",
     "lang": "en-US",
     "theme_color": "#111",
     "display": "standalone",
