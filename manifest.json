@@ -1,22 +1,21 @@
 {
-    "name": "Oste-app",
-    "description": "Application",
-    "start_url": "./",
-    "lang": "en-US",
-    "theme_color": "#111",
-    "display": "standalone",
-    "icons": [
-      {
-        "src": "images/favicon.png",
-        "sizes": "36x36",
-        "type": "png",
-        "purpose": "any maskable"
-      },
-      {
-        "src": "images/favicon.png",
-        "sizes": "512x512",
-        "type": "png",
-        "purpose": "any maskable"
-      }
-    ]
-  }
+  "name": "Oste-App",
+  "start_url": "./",
+  "theme_color": "#000000",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "images/favicon.png",
+      "sizes": "36x36",
+      "type": "png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "images/splash.png",
+      "sizes": "512x512",
+      "purpose": "maskable any"
+    }
+  ]
+}
