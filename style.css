@@ -3,6 +3,7 @@
 @import url('/css/primaryNavigation.css');
 @import url('css/highlights.css');
 @import url('/css/slider.css');
+@import url('/css/formValidation.css');
 
 :root{
     --clr-primary: #f0f07f;
@@ -14,6 +15,11 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+body {
+    background-color: var(--clr-secondary);
+}
+
 /* for screenreader users */
 .sr-only{
     position: fixed;

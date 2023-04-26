@@ -4,3 +4,10 @@ body{
 a{
     color: var(--clr-secondary);
 }
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

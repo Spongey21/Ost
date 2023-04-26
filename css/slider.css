@@ -46,8 +46,6 @@
     outline: 0;
 
     cursor: pointer;
-
-    color: white;
 }
 
 .slider > :last-child, .slider button:first-of-type, .slider button:last-of-type {
