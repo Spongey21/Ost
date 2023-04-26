@@ -1,10 +1,12 @@
-@import url('./base.css');
-@import url('./header.css');
+@import url('base.css');
+@import url('/header.css');
 @import url('./primaryNavigation.css');
-@import url('./highlights.css');
-@import url('./slider.css');
-@import url('./formValidation.css');
-@import url('./footer.css');
+@import url('css/highlights.css');
+@import url('/css/slider.css');
+@import url('./css/formValidation.css');
+@import url('/footer.css');
+
+@import url('');
 
 :root{
     --clr-primary: #f0f07f;
