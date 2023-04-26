@@ -6,7 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Oste-app">
+    <meta name="apple-mobile-web-app-title" content="Oste-app">
+    <meta name="theme-color" content="#111">
+    <meta name="msapplication-navbutton-color" content="#111">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" type="png" sizes="36x36" href="images/favicon.png">
+    <link rel="apple-touch-icon" type="png" sizes="36x36" href="images/favicon.png">
+
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+
+    <script>
+        // Check that service workers are registered
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./js/service-worker.js');
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -60,6 +86,7 @@
             </div>
             <input class="formValidation__submit" type="submit" value="Submit">
         </form>
+        <p>© 2023 Roskilde Denmark, inc. All Rights Reserved.</p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
     <script src="./js/burgermenu.js"></script>
