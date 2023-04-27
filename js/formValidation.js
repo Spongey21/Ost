@@ -5,26 +5,19 @@ const VALIDATION = (function() {
         for (let i = 0; i < form.children.length - 1; i++) {
             let element = form.children[i];
 
-            if (element.children[1].value.length == 0) {
-                errors[i].textContent = `Please fill out: ${element.children[0].textContent}`
-                errorCount++;
-            } else if (element.children[1].name == 'phone' && element.children[1].value.length == 8) {
-                let validNumber = /^\+?[1-9][0-9]{7,14}$/
-
-                if (!validNumber.test(element.children[1].value)) {
-                    errors[i].textContent = `Please fix: ${element.children[0].textContent}`
-                    errorCount++;
-                }
-            } else if (element.children[1].name == 'email') {
-                let validEmailRegex = /^\S+@\S+\.\S+$/
-
-                if (!validEmailRegex.test(element.children[1].value)) {
+            if (element.children[1].value.length > 0) {
+                if (element.children[1].type == 'text') {
+                    errors[i].textContent = ''
+                } else if (element.children[1].type == 'tel' && element.children[1].value.length == 8) {
+                    errors[i].textContent = ''
+                } else if (element.children[1].type == 'email' && element.children[1].value.includes('@') && element.children[1].value.indexOf('@') != 0 && element.children[1].value.indexOf('@') != element.children[1].value.length - 1) {
+                    errors[i].textContent = ''
+                } else {
                     errors[i].textContent = `Please fix: ${element.children[0].textContent}`
                     errorCount++;
                 }
             } else {
-                element.children[1].value = ''
-                errors[i].textContent = `Please fill out: ${element.children[0].textContent}`
+                errors[i].textContent = `Please fill: ${element.children[0].textContent}`
                 errorCount++;
             }
         }

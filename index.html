@@ -59,30 +59,30 @@
     <main id="content">
         <section class="highlights">
             <div class="slider">
-                <button class="back"><i data-feather="arrow-left"></i></button>
-                <button class="forward"><i data-feather="arrow-right"></i></button>
+                <button class="slider__back"><i data-feather="arrow-left"></i></button>
+                <button class="slider__forward"><i data-feather="arrow-right"></i></button>
             </div>
             <div class="pointer"></div>
         </section>
     </main>
     <footer>
-        <form action="" method="get" class="formValidation">
+        <form action="" method="get" class="formValidation" novalidate>
             <div class="formValidation__name">
                 <label class="formValidation__label" for="name">Name</label>
-                <input class="formValidation__input" type="text" name="name" placeholder="Name..">
+                <input class="formValidation__input" type="text" name="name" placeholder="Name.." required>
                 <span class="formValidation__error"></span>
             </div>
             <div class="formValidation__email">
                 <label class="formValidation__label" for="email">Email</label>
-                <input class="formValidation__input" type="text" name="email" placeholder="Email..">
+                <input class="formValidation__input" type="email" name="email" placeholder="Email.." required>
                 <span class="formValidation__error"></span>
             </div>
             <div class="formValidation__phone">
                 <label class="formValidation__label" for="phone">Phone</label>
-                <input class="formValidation__input" type="text" name="phone" placeholder="Phone..">
+                <input class="formValidation__input" type="tel" name="phone" placeholder="Phone.." required>
                 <span class="formValidation__error"></span>
             </div>
-            <input class="formValidation__submit" type="submit" value="Submit">
+            <button class="formValidation__submit" type="submit">Submit</button>
         </form>
         <p>© 2023 Roskilde Denmark, inc. All Rights Reserved.</p>
     </footer>

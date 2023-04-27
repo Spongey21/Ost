@@ -46,5 +46,5 @@ const ERROR_ELEMENTS = document.querySelectorAll('.formValidation__error')
 FORM.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    VALIDATION.validateForm(FORM, ERROR_ELEMENTS)
+    VALIDATION.validateForm(event.target, ERROR_ELEMENTS)
 })
