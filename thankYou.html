@@ -1,40 +1,16 @@
 <!DOCTYPE html>
-<html lang="da">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Oste-App">
-    <meta name="apple-mobile-web-app-title" content="Oste-App">
-    <meta name="theme-color" content="#000000">
-    <meta name="msapplication-navbutton-color" content="#000000">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="msapplication-starturl" content="./">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link rel="icon" type="png" sizes="36x36" href="images/favicon.png">
-    <link rel="apple-touch-icon" type="png" sizes="36x36" href="images/favicon.png">
-    <link rel="icon" sizes="512x512" href="images/splash.png">
-    <link rel="apple-touch-icon" sizes="512x512" href="images/splash.png">
-
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
-
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('./service-worker.js')
-        }
-    </script>
 </head>
-
 <body>
-    <a href="#content" class="sr-only">Spring til indholdet</a>
     <header class="siteHeader">
         <a href="./" class="siteHeader_brand">Brians Ostebiks</a>
         <button class="burgerMenuButton">
@@ -42,7 +18,7 @@
             <span class="sr-only">Menu</span>
         </button>
         <nav class="primaryNavigation" aria-hidden="true">
-            <form>
+            <form action="./ThankYou.html">
                 <div class="primaryNavigation__search">
                     <input type="search" class="primaryNavigation__search--background" name="searchBar"
                         placeholder="Søg efter ost her..">
@@ -50,23 +26,18 @@
                 </div>
             </form>
             <menu class="primaryNavigation_menu">
-                <li class="primaryNavigation_menuItem"><a href="./thankYou.html" class="primaryNavigation_link">Link 1</a></li>
+                <li class="primaryNavigation_menuItem"><a href="#" class="primaryNavigation_link">Link 1</a></li>
                 <li class="primaryNavigation_menuItem"><a href="#" class="primaryNavigation_link">Link 2</a></li>
                 <li class="primaryNavigation_menuItem"><a href="#" class="primaryNavigation_link">Link 3</a></li>
             </menu>
         </nav>
     </header>
-    <main id="content">
-        <section class="highlights">
-            <div class="slider">
-                <button class="slider__back"><i data-feather="arrow-left"></i></button>
-                <button class="slider__forward"><i data-feather="arrow-right"></i></button>
-            </div>
-            <div class="pointer"></div>
-        </section>
+    <main>
+        <h1 class="name_text"></h1>
+        <iframe src="https://www.youtube.com/" frameborder="0"></iframe>
     </main>
     <footer>
-        <form action="./thankYou.html" method="get" class="formValidation" novalidate>
+        <form action="" method="get" class="formValidation" novalidate>
             <div class="formValidation__name">
                 <label class="formValidation__label" for="name">Name</label>
                 <input class="formValidation__input" type="text" name="name" placeholder="Name.." required>
@@ -85,12 +56,7 @@
             <button class="formValidation__submit" type="submit">Submit</button>
         </form>
         <p>© 2023 Roskilde Denmark, inc. All Rights Reserved.</p>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
-    <script src="./js/burgermenu.js"></script>
-    <script src="./js/formValidation.js"></script>
-    <script src="./js/slider.js"></script>
-    <script src="./js/app.js"></script>
+    </footer>   
+    <script src="./js/thankYou.js"></script>
 </body>
-
 </html>

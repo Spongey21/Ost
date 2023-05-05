@@ -20,14 +20,13 @@ const SLIDER = (function () {
                 changeElement(element_container, element_arr[index])
             })
 
-            if (i == 0) { 
+            if (i == 0) {
                 RADIO.checked = true;
                 element_container.append(element_arr[0])
             }
 
             container.appendChild(RADIO)
         }
-
     }
 
     // Slider forward button
@@ -60,7 +59,7 @@ const SLIDER = (function () {
 
     // executes at animation start
     function animationStart(element_container, btn_forward, btn_Back) {
-        element_container.addEventListener('animationstart', function() {
+        element_container.addEventListener('animationstart', function () {
             btn_forward.disable = true;
             btn_Back.disable = true;
         })
@@ -68,7 +67,7 @@ const SLIDER = (function () {
 
     // executes at animation end
     function animationEnd(element_container, btn_forward, btn_Back) {
-        element_container.addEventListener('animationend', function(anim) {
+        element_container.addEventListener('animationend', function (anim) {
             btn_forward.disable = false;
             btn_Back.disable = false;
         })
