@@ -6,31 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Oste-App">
-    <meta name="apple-mobile-web-app-title" content="Oste-App">
-    <meta name="theme-color" content="#000000">
-    <meta name="msapplication-navbutton-color" content="#000000">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="msapplication-starturl" content="./">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <link rel="icon" type="png" sizes="36x36" href="images/favicon.png">
-    <link rel="apple-touch-icon" type="png" sizes="36x36" href="images/favicon.png">
-    <link rel="icon" sizes="512x512" href="images/splash.png">
-    <link rel="apple-touch-icon" sizes="512x512" href="images/splash.png">
-
-    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
-
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('./service-worker.js')
-        }
-    </script>
 </head>
 
 <body>
@@ -66,7 +43,7 @@
         </section>
     </main>
     <footer>
-        <form action="./thankYou.html" method="get" class="formValidation" novalidate>
+        <form action="./html/thankYou.html" method="get" class="formValidation" novalidate>
             <div class="formValidation__name">
                 <label class="formValidation__label" for="name">Name</label>
                 <input class="formValidation__input" type="text" name="name" placeholder="Name.." required>
